@@ -1,4 +1,4 @@
-# ACADEMe - Personalized AI-Powered Education Platform
+# AceIt - Personalized AI-Powered Education Platform
 
 ## Introduction
 
