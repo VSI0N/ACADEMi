@@ -1,4 +1,4 @@
-# ACADAMe - Personalized AI-Powered Education Platform
+## ACADAMe - Personalized AI-Powered Education Platform
 
 
 ![image1](https://github.com/VSI0N/ACADEMe/assets/101629997/a0181a0f-a692-431e-81dd-5742c999c904)
