@@ -4,19 +4,20 @@ import 'package:ACADEMe/academe/pages/progress_view.dart';
 import 'package:ACADEMe/academe/pages/education_view.dart';
 import 'package:ACADEMe/academe/pages/get-started_view.dart';
 import 'package:ACADEMe/academe/components/top_back_skip_view.dart';
+import 'package:ACADEMe/app_theme.dart';
 import 'package:ACADEMe/introduction_animation/components/welcome_view.dart';
+import 'package:ACADEMe/loginScreen.dart';
 import 'package:flutter/material.dart';
 
 class AcademeScreen extends StatefulWidget {
   const AcademeScreen({Key? key}) : super(key: key);
 
   @override
-  _AcademeScreenState createState() =>
-      _AcademeScreenState();
+  _AcademeScreenState createState() => _AcademeScreenState();
 }
 
-class _AcademeScreenState
-    extends State<AcademeScreen> with TickerProviderStateMixin {
+class _AcademeScreenState extends State<AcademeScreen>
+    with TickerProviderStateMixin {
   AnimationController? _animationController;
 
   @override
@@ -37,7 +38,7 @@ class _AcademeScreenState
   Widget build(BuildContext context) {
     print(_animationController?.value);
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: AppTheme.white,
       body: ClipRect(
         child: Stack(
           children: [
@@ -112,6 +113,11 @@ class _AcademeScreenState
   }
 
   void _signUpClick() {
-    Navigator.pop(context);
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => LoginScreen(),
+        ));
+    // }
   }
 }
