@@ -107,7 +107,7 @@ class CategoryView extends StatelessWidget {
               splashColor: Colors.transparent,
               onTap: callback,
               child: SizedBox(
-                width: 280,
+                width: 285,
                 child: Stack(
                   children: <Widget>[
                     Container(

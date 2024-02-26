@@ -70,7 +70,7 @@ class SignUpView extends StatelessWidget {
                       constraints:
                           BoxConstraints(maxWidth: 400, maxHeight: 400),
                       child: Image.asset(
-                        'assets/academe_logo.png',
+                        'assets/academe/academe_logo.png',
                         fit: BoxFit.contain,
                       ),
                     ),
